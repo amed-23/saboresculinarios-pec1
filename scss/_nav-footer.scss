@@ -1,0 +1,48 @@
+@use 'variables';
+@use 'mixin';
+
+nav ul{
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            font-size: variables.$font-medium;
+        }
+        nav a {
+            color: variables.$font-color;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: variables.$font-highlight-hover;
+        }
+
+        footer {
+            position: relative;
+            width: 100%;
+            background-color: variables.$header-footer-href-color;
+            color: variables.$font-color;
+            text-align: justify;
+
+            p{
+                font-weight: variables.$font-normal;
+                font-size: variables.$font-small;
+            }
+
+            a, form label {
+                color: white;
+                text-decoration: none;
+                font-weight: variables.$font-normal;
+                font-size: variables.$font-small;
+        }
+            a:hover {
+                color: variables.$font-highlight-hover;
+        }
+            button {
+                @include mixin.botones();
+                &:hover {
+                    @include mixin.sombra();
+                }
+        
+        }
+        
+        }

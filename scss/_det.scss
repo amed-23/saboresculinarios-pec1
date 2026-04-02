@@ -1,0 +1,74 @@
+@use 'variables';
+@use 'mixin';
+
+/*Páginas de detalle*/
+.det-recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 1000px;
+    margin: 1.25rem auto;
+
+}
+
+.det-recipe .intro, .intro-text,
+.det-recipe .intro-recipe,
+.det-recipe .ingredients,
+.det-recipe .steps,
+.det-recipe .recommended-video {
+    width: 100%;
+}
+
+.det-recipe .intro-text {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.image-recipe {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 2rem;
+    border-radius: 0.5rem;
+}
+
+
+.ingredients ul, .filters ul {
+    list-style: none;
+    font-size: variables.$font-medium;
+    text-align: justify;
+    margin: 1.25rem 0;
+    padding-left: 0;
+}
+
+.steps ol {
+    list-style-position: inside;
+    font-size: variables.$font-medium;
+    text-align: left;
+    margin-left: 1.25rem;
+}
+
+.ingredients-img {
+    display: flex;
+    justify-content: justify;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.ingredients-img img {
+    width: 18.75rem;
+    height: 18.75rem;
+    object-fit: cover;
+}
+
+.recommended-video iframe {
+    aspect-ratio: 16/9;
+    width: 95%;
+    height: auto;
+    margin: 1.875rem auto;
+    border: 0;
+}

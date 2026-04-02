@@ -1,0 +1,30 @@
+@use 'variables';
+@use 'mixin';
+
+
+/*Página principal*/
+        .index {
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/utensilios.jpg);
+            background-attachment: scroll;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .intro {
+            padding: 3rem 0;
+
+            h2 {
+                font-size: variables.$font-big;
+                margin-bottom: 1rem;
+                color: variables.$font-highlight-hover;
+            }
+
+            p {
+                font-size: variables.$font-medium;
+                padding: 1rem 0;
+                color: variables.$font-highlight-hover;
+            }
+        }

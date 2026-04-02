@@ -1,0 +1,6 @@
+# Evitar la carpeta de dependencias
+node_modules/
+
+# Archivos temporales
+.parcel-cache/
+dist/

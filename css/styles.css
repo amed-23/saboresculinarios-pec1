@@ -1,0 +1,470 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+/*Fuentes estándar*/
+/*Colores*/
+/*Página principal*/
+.index {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/utensilios.jpg);
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  padding: 3rem 0;
+}
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #423b2f;
+}
+.intro p {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  color: #423b2f;
+}
+
+/*Elementos de la página categorias.html y recetas */
+.categories {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.filters {
+  grid-row: 1;
+  grid-column: 1;
+  align-items: left;
+  text-align: left;
+}
+
+.publications, .intro {
+  grid-column: 2;
+  text-decoration: none;
+  align-self: left;
+  text-align: left;
+}
+
+section .intro, section .publications {
+  text-align: left;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.25rem;
+}
+
+.recipe-card img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+.recipe-title, .filters a {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  justify-self: center;
+  text-decoration: none;
+  color: #703815;
+}
+.recipe-titlehover, .filters ahover {
+  color: #423b2f;
+}
+
+.pages {
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+  justify-self: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.pages button {
+  background-color: #f5ece0;
+  color: #423b2f;
+  border: solid 1px #423b2f;
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.pages button:hover {
+  box-shadow: 0 0.25rem 1rem rgba(241, 103, 5, 0.368);
+}
+
+/*Páginas de detalle*/
+.det-recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 1.25rem auto;
+}
+
+.det-recipe .intro, .intro-text,
+.det-recipe .intro-recipe,
+.det-recipe .ingredients,
+.det-recipe .steps,
+.det-recipe .recommended-video {
+  width: 100%;
+}
+
+.det-recipe .intro-text {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.image-recipe {
+  width: 95%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+.ingredients ul, .filters ul {
+  list-style: none;
+  font-size: 1.6rem;
+  text-align: justify;
+  margin: 1.25rem 0;
+  padding-left: 0;
+}
+
+.steps ol {
+  list-style-position: inside;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-left: 1.25rem;
+}
+
+.ingredients-img {
+  display: flex;
+  justify-content: justify;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.ingredients-img img {
+  width: 18.75rem;
+  height: 18.75rem;
+  object-fit: cover;
+}
+
+.recommended-video iframe {
+  aspect-ratio: 16/9;
+  width: 95%;
+  height: auto;
+  margin: 1.875rem auto;
+  border: 0;
+}
+
+/*Links*/
+.index-table {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/utensilios.jpg);
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-table {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  font-size: 1rem;
+  border-spacing: 0;
+  border: 1px solid #423b2f;
+  margin: 4rem 0;
+}
+
+caption {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Playwrite DK Uloopet Guides", cursive;
+}
+
+td,
+th {
+  padding: 0.5rem 0.5rem;
+  font-family: "Alegreya", "Georgia", serif;
+  font-size: 1.6rem;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid #423b2f;
+}
+
+th[scope=col] {
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+td a {
+  text-decoration: none;
+  color: #703815;
+}
+td a:hover {
+  color: #423b2f;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #423b2f;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #703815;
+  color: #ffffff;
+  text-align: justify;
+}
+footer p {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+footer a, footer form label {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+footer a:hover {
+  color: #423b2f;
+}
+footer button {
+  background-color: #f5ece0;
+  color: #423b2f;
+  border: solid 1px #423b2f;
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+footer button:hover {
+  box-shadow: 0 0.25rem 1rem rgba(241, 103, 5, 0.368);
+}
+
+/*Elementos comunes*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.5;
+  color: #423b2f;
+  background-color: #f5ece0;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: #703815;
+  color: #ffffff;
+  padding: 1rem 0;
+  position: relative;
+  top: 0;
+}
+
+section {
+  max-width: 800px;
+  margin: 1.25rem auto;
+  text-align: justify;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-family: var(--font-caligraphy);
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url(../img/logo-sabores-culinarios.png);
+  background-size: contain;
+  background-position: center;
+  margin-right: 0.5rem;
+}
+
+h2, h3 {
+  font-family: "Playwrite DK Uloopet Guides", cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 1.25rem 0 1.25rem 0;
+}
+
+p, a {
+  font-family: "Alegreya", "Georgia", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/*Media Queries*/
+/*Teléfono*/
+@media (max-width: 600px) {
+  /*Secciones comunes*/
+  header, footer {
+    width: 100%;
+    padding: 1rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  nav ul {
+    flex-direction: inline-block;
+    gap: 1rem;
+    align-items: center;
+  }
+  nav a {
+    font-size: 1.2rem;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  h2, h3 {
+    text-align: center;
+  }
+  main, section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  /*categorias.html*/
+  .recipe-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .categories {
+    display: block;
+  }
+  .intro, .filters, .publications {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+  /*det1.html y det2.html*/
+  .image-recipe {
+    max-width: 95%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  .ingredients-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 95%;
+  }
+  /*Links*/
+  .container-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  table {
+    display: table;
+    min-width: 600px;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    border-spacing: 0;
+  }
+}
+/*Tablet*/
+@media (min-width: 601px) and (max-width: 992px) {
+  main, section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  header, footer {
+    width: 100%;
+    padding: 1rem;
+  }
+  /*categorias.html*/
+  .recipe-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .categories {
+    display: block;
+  }
+  .intro, .filters, .publications {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+  /*Det1, Det2*/
+  .image-recipe {
+    max-width: 95%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  .ingredients-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 95%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

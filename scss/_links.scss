@@ -1,0 +1,58 @@
+@use 'variables';
+@use 'mixin';
+
+ /*Links*/
+
+        .index-table {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/utensilios.jpg);
+            background-attachment: scroll;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container-table {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            font-size: 1rem;
+            border-spacing: 0;
+            border: 1px solid variables.$font-highlight-hover;
+            margin: 4rem 0;
+        }
+
+        caption {
+            padding: 1rem 0;
+            font-size: variables.$font-big;
+            font-weight: variables.$font-bold;
+            font-family: variables.$font-calligraphy;
+        }
+
+td,
+th {
+    padding: 0.5rem 0.5rem;
+    font-family: variables.$font-serif;
+    font-size: variables.$font-medium;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid variables.$font-highlight-hover;
+}
+
+th[scope="col"] {
+    padding-left: 2rem;
+    font-size: variables.$font-medium;
+    font-weight: variables.$font-bold;
+    text-align: left;
+}
+
+td a {
+    text-decoration: none;
+    color: variables.$header-footer-href-color;
+    &:hover {
+        color: variables.$font-highlight-hover;
+        cursor: pointer;
+    }
+}

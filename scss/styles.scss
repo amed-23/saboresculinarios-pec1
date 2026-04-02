@@ -1,0 +1,221 @@
+@use 'variables';
+@use 'mixin';
+@use 'index';
+@use "categorias";
+@use "det";
+@use "links";
+@use "nav-footer";
+
+
+/*Elementos comunes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.5;
+    color: variables.$font-highlight-hover;
+    background-color: variables.$background-color;
+    }
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: variables.$header-footer-href-color;
+    color: variables.$font-color;
+    padding: 1rem 0;
+    position: relative;
+    top: 0;
+        }
+
+section {
+        max-width: 800px;
+        margin: 1.25rem auto;
+        text-align: justify;
+        }
+
+.container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+h1 {
+    margin-bottom: 1rem;
+    font-family: var(--font-caligraphy);
+    font-weight: variables.$font-bold;
+    font-size: variables.$font-big;
+        }
+
+h1::before {
+    content: "";
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url(../img/logo-sabores-culinarios.png);
+            background-size: contain;
+            background-position: center;
+            margin-right: 0.5rem;
+        }
+
+        h2, h3 {
+            font-family: variables.$font-calligraphy;
+            font-weight: variables.$font-normal;
+            font-size:variables.$font-big;
+            margin: 1.25rem 0 1.25rem 0;
+        }
+
+        p, a{
+            font-family: variables.$font-serif;
+            font-size: variables.$font-medium;
+            font-weight: variables.$font-normal;
+        }
+        
+
+
+/*Media Queries*/
+/*Teléfono*/
+@media (max-width: 600px) {
+
+    /*Secciones comunes*/
+
+    header, footer {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    nav ul {
+        flex-direction: inline-block;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: variables.$font-small;
+    }
+
+    header h1 {
+        font-size: variables.$font-medium;
+    }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    main, section {
+    display: flex;
+    flex-direction: column;    
+    margin: 0 auto;
+    max-width: 95%;
+    }
+
+    /*categorias.html*/
+    .recipe-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories {
+      display: block;
+    }
+    
+    .intro, .filters, .publications {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+    
+    /*det1.html y det2.html*/
+    .image-recipe {
+        max-width: 95%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .ingredients-img {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 95%;
+    }
+
+    /*Links*/
+    .container-table {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table {
+        display: table;
+        min-width: 600px;
+        margin: 1rem 1rem;
+        font-size: 1rem;
+        border-spacing: 0;
+    }
+}
+
+
+/*Tablet*/
+@media (min-width: 601px) and (max-width: 992px) {
+
+    main, section  {
+    display: flex;
+    flex-direction: column;    
+    margin: 0 auto;
+    max-width: 95%;
+    }
+
+    header, footer {
+        width: 100%;
+        padding: 1rem;
+    }
+
+/*categorias.html*/
+    .recipe-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories {
+      display: block;
+    }
+    
+    .intro, .filters, .publications {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+
+    /*Det1, Det2*/
+    .image-recipe {
+        max-width: 95%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .ingredients-img {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 95%;
+    }
+}

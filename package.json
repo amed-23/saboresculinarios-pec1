@@ -1,0 +1,29 @@
+{
+  "name": "PEC01",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 10 years, not dead",
+  "version": "1.0.0",
+  "description": "Package for PEC01",
+  "license": "ISC",
+  "author": "Ana Medina",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.16.4",
+    "posthtml-include": "^2.0.1",
+    "rimraf": "^6.1.3"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "pa11y": "^9.1.1",
+    "sass": "^1.98.0"
+  }
+}

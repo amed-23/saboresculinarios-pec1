@@ -1,0 +1,79 @@
+@use 'variables';
+@use 'mixin';
+
+/*Elementos de la página categorias.html y recetas */
+
+        .categories {
+            display: grid;
+            grid-template-columns: 20% 80%;
+               }
+
+        .filters {
+            grid-row: 1;
+            grid-column: 1;
+            align-items: left;
+            text-align: left;
+        }
+        .publications, .intro {
+            grid-column: 2;
+            text-decoration: none;
+            align-self: left;
+            text-align: left;
+        }
+
+        section .intro, section .publications {
+           text-align: left;
+        }
+
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            padding: 1.25rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .recipe-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1.25rem;
+        }
+
+        .recipe-card img {
+            width: 18rem;
+            height: 18rem;
+            object-fit: cover;
+            display: block;
+            border-radius: 50%;
+        }
+
+        .recipe-title, .filters a {
+            font-size: variables.$font-medium;
+            margin-top: 0.5rem;
+            text-align: center;
+            justify-self: center;
+            text-decoration: none;
+            color: variables.$header-footer-href-color;
+            &hover {
+                color: variables.$font-highlight-hover;
+            }
+        }
+
+        .pages {
+            display: flex;
+            grid-column: 2;
+            justify-content: center;
+            justify-self: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            
+            button {
+            @include mixin.botones();
+            &:hover {
+                @include mixin.sombra();
+            } 
+        }
+        }

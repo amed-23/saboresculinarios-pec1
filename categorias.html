@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Culinarios | Recetario</title>
+    <meta name="description" content="Lista de recetas en el blog de cocina Sabores Culinarios.">
+    <meta name="keywords" content="gastronomía, recetas, imágenes">
+    <link rel="shortcut icon" href="img/logo-sabores-culinarios.png">
+    
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <include src="src/sections/nav.html"></include>
+        </div>
+    </header>
+
+    <main class="categories">
+
+            <section class="intro">
+                <h2>Bienvenido a las recetas de Sabores Culinarios</h2>
+                <p>Dicen que las mejores historias se cuentan alrededor de una mesa, y en este blog quiero compartir contigo las mías a través de los sabores. Aquí no encontrarás solo recetas, sino esos trucos heredados y experimentos que hacen que cocinar sea un placer y no una tarea.</p>
+                <p><em>¡Ponte el delantal y cocina conmigo!</em></p>
+            </section>
+        
+    <section class="filters">
+        <h2>Categorías</h2>
+        <ul>
+            <li><a href="#">Entrantes</a></li>
+            <li><a href="#">Platos principales</a></li>
+            <li><a href="#">Postres</a></li>
+            <li><a href="#">Vegetariano</a></li>
+            <li><a href="#">Vegano</a></li>
+            <li><a href="#">Sin gluten</a></li>
+        </ul>
+    </section>
+
+        
+        <section class="publications">
+
+        <h2>Últimas publicaciones</h2>
+
+        <div class = "recipe-grid">
+            <div class="recipe-card" data-aos="zoom-in">
+                <a href="det1.html"><img src="img/crema-zanahoria-jengibre.jpg" alt="Crema de zanahoria y jengibre"></a>
+                <a href="det1.html" class="recipe-title">Crema de zanahoria y jengibre</a>
+            </div>
+             <div class="recipe-card" data-aos="zoom-in">
+                <a href="det2.html"><img src = "img/tortilla-patatas.jpg" alt="Tortilla de patata"></a>
+                <a href="det2.html" class="recipe-title">Tortilla de patata</a>
+            </div>
+             <div class="recipe-card" data-aos="zoom-in">
+                <a href="#"><img src = "img/paella-marisco.jpg" alt ="Paella de marisco"></a>
+                <a href="#" class="recipe-title">Paella de marisco</a>
+            </div>
+        </div>
+
+        <div class = "recipe-grid">
+            <div class="recipe-card" data-aos="zoom-in">
+                <a href="#"><img src = "img/berenjenas-rellenas.jpg" alt="Berenjenas rellenas"></a>
+                <a href="#" class="recipe-title">Berenjenas rellenas</a>
+            </div>
+            <div class="recipe-card" data-aos="zoom-in">
+                <a href="#"><img src = "img/curry-verduras.jpg" alt ="Curry de verduras"></a>
+                <a href="#" class="recipe-title"><span lang="en">Curry</span> de verduras</a>
+            </div>
+            <div class="recipe-card" data-aos="zoom-in">
+                <a href="#"><img src = "img/salmorejo.jpg" alt ="Salmorejo"></a>
+                <a href="#" class="recipe-title">Salmorejo</a>
+            </div>
+        </div>
+
+        <div class = "recipe-grid">
+            <div class="recipe-card" data-aos="zoom-in">
+                <a href="#"><img src = "img/tarta-chocolate.jpg" alt ="Tarta de chocolate"></a>
+                <a href="#" class="recipe-title">Tarta de chocolate</a>
+            </div>
+            <div class="recipe-card" data-aos="zoom-in">
+                <a href="#"><img src = "img/croquetas.jpg" alt = "Croquetas"></a>
+                <a href="#" class="recipe-title">Croquetas</a>
+            </div>
+            <div class="recipe-card" data-aos="zoom-in">
+                <a href="#"><img src = "img/ensalada-patata.jpg" alt="Ensalada de patatas"></a>
+                <a href="#" class="recipe-title">Ensalada de patatas (<span lang="de">Kartoffelsalat</span>)</a>
+            </div>
+        </div>
+        </section>
+        
+
+        <div class="pages">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>...</button>
+            </div>
+
+    </main>
+
+    <include  src="src/sections/footer.html"></include>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+</html>
