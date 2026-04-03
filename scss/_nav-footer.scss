@@ -1,10 +1,6 @@
 @use 'variables';
 @use 'mixin';
 
-h1 a {
-    color: variables.$font-color;
-    text-decoration: none;
-}
 
 nav ul{
             list-style: none;

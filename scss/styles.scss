@@ -46,11 +46,13 @@ section {
             margin: 0 auto;
         }
 
-h1 {
+h1 a {
     margin-bottom: 1rem;
     font-family: var(--font-caligraphy);
     font-weight: variables.$font-bold;
     font-size: variables.$font-big;
+    color: variables.$font-color;
+    text-decoration:none;
         }
 
 h1::before {
