@@ -24,6 +24,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "browserslist": "^4.28.2",
+    "canvas-confetti": "^1.9.4",
     "pa11y": "^9.1.1",
     "sass": "^1.98.0"
   }
