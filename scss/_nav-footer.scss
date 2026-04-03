@@ -1,13 +1,32 @@
 @use 'variables';
 @use 'mixin';
 
+h1 a {
+    font-family: variables.$font-calligraphy;
+    font-weight: variables.$font-normal;
+    font-size: variables.$font-big;
+    color: variables.$font-color;
+    text-decoration:none;
+        }
+
+h1::before {
+    content: "";
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url(../img/logo-sabores-culinarios.png);
+            background-size: contain;
+            background-position: center;
+            margin-right: 0.5rem;
+        }
+
 nav ul{
             list-style: none;
             display: flex;
             gap: 1.5rem;
             font-size: variables.$font-medium;
         }
-        nav a {
+        nav a{
             color: variables.$font-color;
             text-decoration: none;
             transition: color 0.3s;

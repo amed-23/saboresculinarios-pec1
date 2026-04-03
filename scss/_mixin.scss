@@ -2,8 +2,8 @@
 
 @mixin botones() {
   background-color: variables.$background-color;
-  color: variables.$font-highlight-hover;
-  border: solid 1px variables.$font-highlight-hover;
+  color: variables.$font-body-text;
+  border: solid 1px variables.$font-body-text;
   border-radius: 0.5rem;
   margin-bottom: 1.25rem;
   padding: 0.5rem 1rem;
@@ -11,5 +11,5 @@
 }
 
 @mixin sombra() {
-  box-shadow: 0 0.25rem 1rem rgba(241, 103, 5, 0.368);
+  box-shadow: 0 0.25rem 1rem #f167055e;
 }

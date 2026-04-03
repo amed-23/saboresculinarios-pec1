@@ -11,12 +11,17 @@
 
 }
 
-.det-recipe .intro, .intro-text,
+.det-recipe .intro,
+.intro-text,
 .det-recipe .intro-recipe,
 .det-recipe .ingredients,
 .det-recipe .steps,
 .det-recipe .recommended-video {
     width: 100%;
+
+    p {
+        font-size: variables.$font-medium;
+    }
 }
 
 .det-recipe .intro-text {
@@ -25,19 +30,17 @@
 }
 
 
-
-
 .image-recipe {
-    width: 95%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
-    margin: 2rem;
+    //margin: 2rem;
     border-radius: 0.5rem;
 }
 
 
-.ingredients ul, .filters ul {
+.ingredients li {
     list-style: none;
     font-size: variables.$font-medium;
     text-align: justify;
@@ -45,7 +48,7 @@
     padding-left: 0;
 }
 
-.steps ol {
+.steps li {
     list-style-position: inside;
     font-size: variables.$font-medium;
     text-align: left;
