@@ -21,6 +21,7 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #423b2f;
+  text-align: center;
 }
 .intro p {
   font-size: 1.6rem;
@@ -41,14 +42,24 @@
   text-align: left;
 }
 
-.publications, .intro {
+.filters li {
+  list-style: none;
+  font-size: 1.6rem;
+  text-align: justify;
+  margin: 1.25rem 0;
+  padding-left: 0;
+}
+
+.publications,
+.intro {
   grid-column: 2;
   text-decoration: none;
   align-self: left;
   text-align: left;
 }
 
-section .intro, section .publications {
+section .intro,
+section .publications {
   text-align: left;
 }
 
@@ -76,7 +87,8 @@ section .intro, section .publications {
   border-radius: 50%;
 }
 
-.recipe-title, .filters a {
+.recipe-title,
+.filters ul li a {
   font-size: 1.6rem;
   margin-top: 0.5rem;
   text-align: center;
@@ -84,8 +96,9 @@ section .intro, section .publications {
   text-decoration: none;
   color: #703815;
 }
-.recipe-titlehover, .filters ahover {
-  color: #423b2f;
+.recipe-title:hover,
+.filters ul li a:hover {
+  color: #e87b49;
 }
 
 .pages {
@@ -106,7 +119,7 @@ section .intro, section .publications {
   cursor: pointer;
 }
 .pages button:hover {
-  box-shadow: 0 0.25rem 1rem rgba(241, 103, 5, 0.368);
+  box-shadow: 0 0.25rem 1rem rgba(241, 103, 5, 0.368627451);
 }
 
 /*Páginas de detalle*/
@@ -118,12 +131,21 @@ section .intro, section .publications {
   margin: 1.25rem auto;
 }
 
-.det-recipe .intro, .intro-text,
+.det-recipe .intro,
+.intro-text,
 .det-recipe .intro-recipe,
 .det-recipe .ingredients,
 .det-recipe .steps,
 .det-recipe .recommended-video {
   width: 100%;
+}
+.det-recipe .intro p,
+.intro-text p,
+.det-recipe .intro-recipe p,
+.det-recipe .ingredients p,
+.det-recipe .steps p,
+.det-recipe .recommended-video p {
+  font-size: 1.6rem;
 }
 
 .det-recipe .intro-text {
@@ -132,15 +154,14 @@ section .intro, section .publications {
 }
 
 .image-recipe {
-  width: 95%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
-  margin: 2rem;
   border-radius: 0.5rem;
 }
 
-.ingredients ul, .filters ul {
+.ingredients li {
   list-style: none;
   font-size: 1.6rem;
   text-align: justify;
@@ -148,7 +169,7 @@ section .intro, section .publications {
   padding-left: 0;
 }
 
-.steps ol {
+.steps li {
   list-style-position: inside;
   font-size: 1.6rem;
   text-align: left;
@@ -201,7 +222,7 @@ table {
 caption {
   padding: 1rem 0;
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Playwrite DK Uloopet Guides", cursive;
 }
 
@@ -227,8 +248,27 @@ td a {
   color: #703815;
 }
 td a:hover {
-  color: #423b2f;
+  color: #e87b49;
   cursor: pointer;
+}
+
+h1 a {
+  font-family: "Playwrite DK Uloopet Guides", cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url(../img/logo-sabores-culinarios.png);
+  background-size: contain;
+  background-position: center;
+  margin-right: 0.5rem;
 }
 
 nav ul {
@@ -245,7 +285,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #423b2f;
+  color: #e87b49;
 }
 
 footer {
@@ -266,7 +306,7 @@ footer a, footer form label {
   font-size: 1.2rem;
 }
 footer a:hover {
-  color: #423b2f;
+  color: #e87b49;
 }
 footer button {
   background-color: #f5ece0;
@@ -278,7 +318,7 @@ footer button {
   cursor: pointer;
 }
 footer button:hover {
-  box-shadow: 0 0.25rem 1rem rgba(241, 103, 5, 0.368);
+  box-shadow: 0 0.25rem 1rem rgba(241, 103, 5, 0.368627451);
 }
 
 /*Elementos comunes*/
@@ -320,32 +360,16 @@ section {
   margin: 0 auto;
 }
 
-h1 {
-  margin-bottom: 1rem;
-  font-family: var(--font-caligraphy);
-  font-weight: 600;
-  font-size: 2.5rem;
-}
-
-h1::before {
-  content: "";
-  display: inline-block;
-  width: 1.875rem;
-  height: 1.875rem;
-  background-image: url(../img/logo-sabores-culinarios.png);
-  background-size: contain;
-  background-position: center;
-  margin-right: 0.5rem;
-}
-
-h2, h3 {
+h2,
+h3 {
   font-family: "Playwrite DK Uloopet Guides", cursive;
   font-weight: 400;
   font-size: 2.5rem;
   margin: 1.25rem 0 1.25rem 0;
 }
 
-p, a {
+p,
+a {
   font-family: "Alegreya", "Georgia", serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -355,7 +379,8 @@ p, a {
 /*Teléfono*/
 @media (max-width: 600px) {
   /*Secciones comunes*/
-  header, footer {
+  header,
+  footer {
     width: 100%;
     padding: 1rem;
   }
@@ -373,14 +398,16 @@ p, a {
   header h1 {
     font-size: 1.6rem;
   }
-  h2, h3 {
+  h2,
+  h3 {
     text-align: center;
   }
-  main, section {
+  main,
+  section {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 90%;
   }
   /*categorias.html*/
   .recipe-grid {
@@ -390,7 +417,9 @@ p, a {
   .categories {
     display: block;
   }
-  .intro, .filters, .publications {
+  .intro,
+  .filters,
+  .publications {
     display: flex;
     flex-direction: column;
     max-width: 95%;
@@ -426,13 +455,15 @@ p, a {
 }
 /*Tablet*/
 @media (min-width: 601px) and (max-width: 992px) {
-  main, section {
+  main,
+  section {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     max-width: 95%;
   }
-  header, footer {
+  header,
+  footer {
     width: 100%;
     padding: 1rem;
   }
@@ -444,7 +475,9 @@ p, a {
   .categories {
     display: block;
   }
-  .intro, .filters, .publications {
+  .intro,
+  .filters,
+  .publications {
     display: flex;
     flex-direction: column;
     max-width: 90%;

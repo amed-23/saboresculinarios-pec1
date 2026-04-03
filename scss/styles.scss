@@ -12,16 +12,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     line-height: 1.5;
-    color: variables.$font-highlight-hover;
+    color: variables.$font-body-text;
     background-color: variables.$background-color;
-    }
+}
 
 main {
     flex: 1;
@@ -33,52 +33,34 @@ header {
     padding: 1rem 0;
     position: relative;
     top: 0;
-        }
+}
 
 section {
-        max-width: 800px;
-        margin: 1.25rem auto;
-        text-align: justify;
-        }
+    max-width: 800px;
+    margin: 1.25rem auto;
+    text-align: justify;
+}
 
 .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-h1 a {
-    margin-bottom: 1rem;
-    font-family: var(--font-caligraphy);
-    font-weight: variables.$font-bold;
+h2,
+h3 {
+    font-family: variables.$font-calligraphy;
+    font-weight: variables.$font-normal;
     font-size: variables.$font-big;
-    color: variables.$font-color;
-    text-decoration:none;
-        }
+    margin: 1.25rem 0 1.25rem 0;
+}
 
-h1::before {
-    content: "";
-            display: inline-block;
-            width: 1.875rem;
-            height: 1.875rem;
-            background-image: url(../img/logo-sabores-culinarios.png);
-            background-size: contain;
-            background-position: center;
-            margin-right: 0.5rem;
-        }
+p,
+a {
+    font-family: variables.$font-serif;
+    font-size: variables.$font-medium;
+    font-weight: variables.$font-normal;
+}
 
-        h2, h3 {
-            font-family: variables.$font-calligraphy;
-            font-weight: variables.$font-normal;
-            font-size:variables.$font-big;
-            margin: 1.25rem 0 1.25rem 0;
-        }
-
-        p, a{
-            font-family: variables.$font-serif;
-            font-size: variables.$font-medium;
-            font-weight: variables.$font-normal;
-        }
-        
 
 
 /*Media Queries*/
@@ -87,7 +69,8 @@ h1::before {
 
     /*Secciones comunes*/
 
-    header, footer {
+    header,
+    footer {
         width: 100%;
         padding: 1rem;
     }
@@ -110,35 +93,39 @@ h1::before {
         font-size: variables.$font-medium;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
         text-align: center;
     }
 
-    main, section {
-    display: flex;
-    flex-direction: column;    
-    margin: 0 auto;
-    max-width: 95%;
+    main,
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 90%;
     }
 
     /*categorias.html*/
-    .recipe-grid{
+    .recipe-grid {
         display: flex;
         flex-direction: column;
     }
 
     .categories {
-      display: block;
+        display: block;
     }
-    
-    .intro, .filters, .publications {
+
+    .intro,
+    .filters,
+    .publications {
         display: flex;
         flex-direction: column;
         max-width: 95%;
         padding: 0 1rem;
         text-align: justify;
     }
-    
+
     /*det1.html y det2.html*/
     .image-recipe {
         max-width: 95%;
@@ -174,29 +161,33 @@ h1::before {
 /*Tablet*/
 @media (min-width: 601px) and (max-width: 992px) {
 
-    main, section  {
-    display: flex;
-    flex-direction: column;    
-    margin: 0 auto;
-    max-width: 95%;
+    main,
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 95%;
     }
 
-    header, footer {
+    header,
+    footer {
         width: 100%;
         padding: 1rem;
     }
 
-/*categorias.html*/
-    .recipe-grid{
+    /*categorias.html*/
+    .recipe-grid {
         display: flex;
         flex-direction: column;
     }
 
     .categories {
-      display: block;
+        display: block;
     }
-    
-    .intro, .filters, .publications {
+
+    .intro,
+    .filters,
+    .publications {
         display: flex;
         flex-direction: column;
         max-width: 90%;

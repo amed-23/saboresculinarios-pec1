@@ -11,12 +11,14 @@
 
 }
 
-.det-recipe .intro, .intro-text,
+.det-recipe .intro,
+.intro-text,
 .det-recipe .intro-recipe,
 .det-recipe .ingredients,
 .det-recipe .steps,
 .det-recipe .recommended-video {
     width: 100%;
+
     p {
         font-size: variables.$font-medium;
     }

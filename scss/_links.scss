@@ -1,35 +1,35 @@
 @use 'variables';
 @use 'mixin';
 
- /*Links*/
+/*Links*/
 
-        .index-table {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/utensilios.jpg);
-            background-attachment: scroll;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+.index-table {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/utensilios.jpg);
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-        .container-table {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+.container-table {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-        table {
-            width: 100%;
-            font-size: 1rem;
-            border-spacing: 0;
-            border: 1px solid variables.$font-highlight-hover;
-            margin: 4rem 0;
-        }
+table {
+    width: 100%;
+    font-size: 1rem;
+    border-spacing: 0;
+    border: 1px solid variables.$font-body-text;
+    margin: 4rem 0;
+}
 
-        caption {
-            padding: 1rem 0;
-            font-size: variables.$font-big;
-            font-weight: variables.$font-normal;
-            font-family: variables.$font-calligraphy;
-        }
+caption {
+    padding: 1rem 0;
+    font-size: variables.$font-big;
+    font-weight: variables.$font-normal;
+    font-family: variables.$font-calligraphy;
+}
 
 td,
 th {
@@ -38,7 +38,7 @@ th {
     font-size: variables.$font-medium;
     vertical-align: top;
     text-align: center;
-    border: 1px solid variables.$font-highlight-hover;
+    border: 1px solid variables.$font-body-text;
 }
 
 th[scope="col"] {
@@ -51,6 +51,7 @@ th[scope="col"] {
 td a {
     text-decoration: none;
     color: variables.$header-footer-href-color;
+
     &:hover {
         color: variables.$font-highlight-hover;
         cursor: pointer;
