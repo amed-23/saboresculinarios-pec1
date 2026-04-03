@@ -1,13 +1,18 @@
 @use 'variables';
 @use 'mixin';
 
+h1 a {
+    color: variables.$font-color;
+    text-decoration: none;
+}
+
 nav ul{
             list-style: none;
             display: flex;
             gap: 1.5rem;
             font-size: variables.$font-medium;
         }
-        nav a {
+        nav a{
             color: variables.$font-color;
             text-decoration: none;
             transition: color 0.3s;
