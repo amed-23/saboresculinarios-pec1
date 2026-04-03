@@ -1,17 +1,18 @@
 <footer>
+    <script src="js/app_footer.js" defer></script>
         <div class="container">
             <p>&copy; 2026 Sabores Culinarios. Todos los derechos reservados.</p>
             <p>Correo electrónico de contacto: <a href="mailto:info@saboresculinarios">info@saboresculinarios</a></p>
         </div>
         <div class="container">
-            <form action="#" method="post">
+            <form name ="subscription" action="/action_page.php" method="post" onsubmit="return validateForm()">
                 <label class="visually-hidden" for="email">Subscríbete para estar al día de las nuevas recetas publicadas: </label>
                 <input type ="email" id="email" name="email" placeholder="Tu correo electrónico" required>
             <div class="container">
                 <input type="checkbox" name="policy" id="policy" value="Acepta" required>
                 <label for="policy">Al subscribirme, acepto recibir correos del blog "Tus sabores culinarios" y declaro que he leído y acepto su <a href="#">política de privacidad</a>.</label>
             </div>
-                <button type="submit">Subscribirme</button>
+                <button id="subscribir" type="submit">Subscribirme</button>
             </form>
         </div>
     </footer>
