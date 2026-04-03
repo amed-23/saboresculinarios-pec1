@@ -1,5 +1,5 @@
 {
-  "name": "PEC01",
+  "name": "pec01",
   "source": "index.html",
   "browserslist": "> 0.5%, last 10 years, not dead",
   "version": "1.0.0",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "browserslist": "^4.28.2",
     "pa11y": "^9.1.1",
     "sass": "^1.98.0"
   }

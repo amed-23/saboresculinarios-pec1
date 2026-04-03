@@ -14,6 +14,15 @@
             align-items: left;
             text-align: left;
         }
+        
+    .filters li {
+    list-style: none;
+    font-size: variables.$font-medium;
+    text-align: justify;
+    margin: 1.25rem 0;
+    padding-left: 0;
+}
+
         .publications, .intro {
             grid-column: 2;
             text-decoration: none;
