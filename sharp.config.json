@@ -4,5 +4,8 @@
   },
   "jpeg": {
     "quality": 80
+  },
+  "png": {
+    "quality": 90
   }
 }
