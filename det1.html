@@ -7,8 +7,7 @@
     <title>Sabores Culinarios | Recetas</title>
     <meta name="description" content="Receta de crema de zanahoria y jengibre en el blog de cocina Sabores Culinarios.">
     <meta name="keywords" content="gastronomía, crema, zanahoria, jengibre, receta">
-    <link rel="shortcut icon" href="img/logo-sabores-culinarios.png">
-
+    <link rel="icon" type="image/png" href="img/logo-sabores-culinarios.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -22,7 +21,12 @@
     <main class="det-recipe">
         <section class="intro">
             <h2>Crema de zanahoria y jengibre</h2>
-            <img class="image-recipe" src="img/crema-zanahoria-jengibre.jpg" alt="Crema de zanahoria y jengibre">
+            <picture>
+                <source media ="(min-width: 993px)" srcset="img/crema-zanahoria-jengibre.jpg?as=webp&width=2400 2x, img/crema-zanahoria-jengibre.jpg?as=webp&width=1200 1x" type="image/webp">
+                <source media="(min-width: 601px)" srcset="img/crema-zanahoria-jengibre.jpg?as=webp&width=1600 2x, img/crema-zanahoria-jengibre.jpg?as=webp&width=800 1x" type="image/webp" />
+                <source media="(max-width: 600px)" srcset="img/crema-zanahoria-jengibre-movil.jpg?as=webp&width=800 2x, img/crema-zanahoria-jengibre-movil.jpg?as=webp&width=400 1x" type="image/webp" />
+                <img class="image-recipe" src="img/crema-zanahoria-jengibre.jpg" alt="Crema de zanahoria y jengibre">
+            </picture>
             <p class="intro-text">Hoy te traigo una receta que es, literalmente, un rayo de sol en un cuenco. Si has
                 tenido un día largo o simplemente necesitas algo que te reconforte el alma (y el estómago), esta crema
                 de zanahoria y jengibre es tu mejor aliada.</p>
@@ -53,9 +57,24 @@
         </section>
 
         <div class="ingredients-img">
-            <img src="img/zanahoria.jpg" alt="Zanahoria">
-            <img src="img/jengibre.jpg" alt="Jengibre">
-            <img src="img/coco.jpg" alt="Coco">
+            <picture>
+                <source media ="(min-width: 993px)" srcset="img/zanahoria.jpg?as=webp&width=800 800w" type="image/webp">
+                <source media="(min-width: 601px)" srcset="img/zanahoria.jpg?as=webp&width=600 600w" type="image/webp" />
+                <source media="(max-width: 600px)" srcset="img/zanahoria.jpg?as=webp&width=400 400w" type="image/webp" />
+                <img src="img/zanahoria.jpg" alt="Zanahoria">
+            </picture>
+            <picture>
+                <source media ="(min-width: 993px)" srcset="img/jengibre.jpg?as=webp&width=800 800w" type="image/webp">
+                <source media="(min-width: 601px)" srcset="img/jengibre.jpg?as=webp&width=600 600w" type="image/webp" />
+                <source media="(max-width: 600px)" srcset="img/jengibre.jpg?as=webp&width=400 400w" type="image/webp" />
+                <img src="img/jengibre.jpg" alt="Jengibre">
+            </picture>
+            <picture>
+                <source media ="(min-width: 993px)" srcset="img/coco.jpg?as=webp&width=800 800w" type="image/webp">
+                <source media="(min-width: 601px)" srcset="img/coco.jpg?as=webp&width=600 600w" type="image/webp" />
+                <source media="(max-width: 600px)" srcset="img/coco.jpg?as=webp&width=400 400w" type="image/webp" />
+                <img src="img/coco.jpg" alt="Coco">
+            </picture>       
         </div>
 
 

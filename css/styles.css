@@ -29,6 +29,39 @@
   color: #423b2f;
 }
 
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Crece un 10% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.logo-svg {
+  width: 216px;
+  height: 216px;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-svg svg {
+  padding: 30px;
+  transform-origin: center center;
+  animation: latido 2s infinite ease-in-out;
+}
+
+.utensilios {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.recetario {
+  object-fit: cover;
+  clip-path: polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%);
+}
+
 /*Elementos de la página categorias.html y recetas */
 .categories {
   display: grid;
@@ -84,7 +117,7 @@ section .publications {
   height: 18rem;
   object-fit: cover;
   display: block;
-  border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
 }
 
 .recipe-title,
@@ -186,6 +219,14 @@ section .publications {
 .ingredients-img img {
   width: 18.75rem;
   height: 18.75rem;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  object-fit: cover;
+}
+
+.ingredients-img img:hover {
+  width: 18.75rem;
+  height: 18.75rem;
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
   object-fit: cover;
 }
 

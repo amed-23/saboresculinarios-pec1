@@ -65,6 +65,14 @@
 .ingredients-img img {
     width: 18.75rem;
     height: 18.75rem;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    object-fit: cover;
+}
+
+.ingredients-img img:hover {
+    width: 18.75rem;
+    height: 18.75rem;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
     object-fit: cover;
 }
 

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabores Culinarios - Blog de Gastronomía</title>
+    <title>Sabores Culinarios | Recetas</title>
     <meta name="description" content="Receta de tortilla de patata en el blog de cocina Sabores Culinarios.">
     <meta name="keywords" content="gastronomía, tortilla, patata, receta">
+    <link rel="icon" type="image/png" href="img/logo-sabores-culinarios.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -20,7 +21,13 @@
     <main class="det-recipe">
         <section class="intro">
             <h2>Tortilla de patata</h2>
-            <img class="image-recipe" src="img/tortilla-patatas.jpg" alt="Tortilla de patata">
+            <picture>
+                <source media ="(min-width: 993px)" srcset="img/tortilla-patatas.jpg?as=webp&width=2400 2x, img/tortilla-patatas.jpg?as=webp&width=1200 1x" type="image/webp">
+                <source media="(min-width: 601px)" srcset="img/tortilla-patatas.jpg?as=webp&width=1600 2x, img/tortilla-patatas.jpg?as=webp&width=800 1x" type="image/webp" />
+                <source media="(max-width: 600px)" srcset="img/tortilla-patatas-movil.jpg?as=webp&width=800 2x, img/tortilla-patatas-movil.jpg?as=webp&width=400 1x" type="image/webp" />
+                <img class="image-recipe" src="img/tortilla-patatas.jpg" alt="Tortilla de patata">
+            </picture>
+            
             <p class="intro-text">¡Hablemos de palabras mayores! Si hay un plato que define nuestra gastronomía, que
                 levanta pasiones y que genera debates capaces de dividir a familias enteras.</p>
             <p class="intro-text">¿Con cebolla o sin cebolla? ¿Cuajada o de esas que "lloran" en el plato? En este blog
@@ -51,9 +58,24 @@
         </section>
 
         <div class="ingredients-img">
-            <img src="img/patata.jpg" alt="Patatas">
-            <img src="img/cebolla.jpg" alt="Cebolla">
-            <img src="img/huevo.jpg" alt="Huevos">
+             <picture>
+                <source media ="(min-width: 993px)" srcset="img/patata.jpg?as=webp&width=800 800w" type="image/webp">
+                <source media="(min-width: 601px)" srcset="img/patata.jpg?as=webp&width=600 600w" type="image/webp" />
+                <source media="(max-width: 600px)" srcset="img/patata.jpg?as=webp&width=400 400w" type="image/webp" />
+                <img src="img/patata.jpg" alt="Patatas">
+            </picture>  
+             <picture>
+                <source media ="(min-width: 993px)" srcset="img/cebolla.jpg?as=webp&width=800 800w" type="image/webp">
+                <source media="(min-width: 601px)" srcset="img/cebolla.jpg?as=webp&width=600 600w" type="image/webp" />
+                <source media="(max-width: 600px)" srcset="img/cebolla.jpg?as=webp&width=400 400w" type="image/webp" />
+                <img src="img/cebolla.jpg" alt="Cebolla">
+            </picture>  
+             <picture>
+                <source media ="(min-width: 993px)" srcset="img/huevo.jpg?as=webp&width=800 800w" type="image/webp">
+                <source media="(min-width: 601px)" srcset="img/huevo.jpg?as=webp&width=600 600w" type="image/webp" />
+                <source media="(max-width: 600px)" srcset="img/huevo.jpg?as=webp&width=400 400w" type="image/webp" />
+                <img src="img/huevo.jpg" alt="Huevos">
+            </picture>              
         </div>
 
 
