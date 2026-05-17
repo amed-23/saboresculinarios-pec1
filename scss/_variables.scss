@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
-
-
 /*Fuentes estándar*/
+.playwrite-dk-uloopet-guides-regular {
+  font-family: "Playwrite DK Uloopet Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.alegreya-roman {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400 600;
+  font-style: normal;
+}
+
+
 $font-calligraphy: "Playwrite DK Uloopet Guides", cursive;
 $font-serif: "Alegreya", "Georgia", serif;
 
