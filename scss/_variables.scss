@@ -1,22 +1,9 @@
-/*Fuentes estándar*//*
-.playwrite-dk-uloopet-guides-regular {
-  font-family: "Playwrite DK Uloopet Guides", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.alegreya-roman {
-  font-family: "Alegreya", serif;
-  font-optical-sizing: auto;
-  font-weight: 400 600;
-  font-style: normal;
-}*/
+/*Fuentes estándar*/
 
 @font-face {
   font-family: "Playwrite DK Uloopet Guides";
   font-display: swap;
-  src: url("../fonts/Playwrite_DK_Uloopet_Guides/PlaywriteDKUloopetGuides-Regular.ttf") format("truetype");
+  src: url("../fonts/Playwrite_DK_Uloopet_Guides/PlaywriteDKUloopetGuides-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -24,7 +11,7 @@
 @font-face {
   font-family: "Alegreya";
   font-display: swap;
-  src: url("../fonts/Alegreya/Alegreya-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Alegreya/Alegreya-VariableFont_wght.woff2") format("woff2");
   font-weight: 400 600;
   font-style: normal;
 }
@@ -32,7 +19,7 @@
 @font-face {
   font-family: "Alegreya";
   font-display: swap;
-  src: url("../fonts/Alegreya/Alegreya-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Alegreya/Alegreya-Italic-VariableFont_wght.woff2") format("woff2");
   font-weight: 400 600;
   font-style: italic;
 }
